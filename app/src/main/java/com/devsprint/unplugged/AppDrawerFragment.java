@@ -68,6 +68,8 @@ public class AppDrawerFragment extends Fragment {
 
         Intent i = new Intent(Intent.ACTION_MAIN, null);
         i.addCategory(Intent.CATEGORY_LAUNCHER);
+        int j = 0;
+
 
         List<ResolveInfo> allApps = pm.queryIntentActivities(i, 0);
         for(ResolveInfo ri:allApps) {
@@ -75,7 +77,9 @@ public class AppDrawerFragment extends Fragment {
             app.AppName = ri.loadLabel(pm).toString();
             app.AppId = ri.activityInfo.packageName.toString();
             apps_list.add(app);
+            j++;
         }
+        Log.d("abcde", "xyz " + apps_list.size());
 
     }
 
