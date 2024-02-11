@@ -32,6 +32,7 @@ public class AppListRecyclerAdapter extends RecyclerView.Adapter<AppViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull AppViewHolder holder, int position) {
         holder.appName.setText(app_list.get(position).AppName);
+        holder.appID = app_list.get(position).AppId;
         Log.d("d", "abcdefgh");
     }
 
