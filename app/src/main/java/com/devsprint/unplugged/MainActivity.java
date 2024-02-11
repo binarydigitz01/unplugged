@@ -35,8 +35,8 @@ public class MainActivity extends FragmentActivity {
         public ScreenSlidePagerAdapter(FragmentActivity fa) {
             super(fa);
             screens = new ArrayList<Fragment>();
-            screens.add(new AppDrawerFragment());
             screens.add(new HomeFragment());
+            screens.add(new AppDrawerFragment());
             screens.add(new PersonalSpaceFragment());
         }
 
