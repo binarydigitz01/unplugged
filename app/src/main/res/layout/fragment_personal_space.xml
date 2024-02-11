@@ -15,7 +15,7 @@
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -31,7 +31,9 @@
         android:id="@+id/textView"
         android:layout_width="412dp"
         android:layout_height="66dp"
+        android:gravity="center"
         android:text="Personal Space"
+        android:textSize="50.0dip"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,6 +43,7 @@
         android:layout_height="51dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="12dp"
+        android:background="@color/design_default_color_on_secondary"
         android:onClick="onButtonClick"
         android:scaleType="fitCenter"
         android:src="@drawable/plus"
