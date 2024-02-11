@@ -30,13 +30,14 @@ public class MainActivity extends FragmentActivity {
     }
 
     private class ScreenSlidePagerAdapter extends FragmentStateAdapter {
-        private static final int NUM_PAGES = 2;
+        private static final int NUM_PAGES = 3;
         private ArrayList<Fragment> screens;
         public ScreenSlidePagerAdapter(FragmentActivity fa) {
             super(fa);
             screens = new ArrayList<Fragment>();
             screens.add(new AppDrawerFragment());
             screens.add(new HomeFragment());
+            screens.add(new PersonalSpaceFragment());
         }
 
         // TODO Add More Screens Over here
