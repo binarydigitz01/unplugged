@@ -10,7 +10,9 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -85,8 +87,8 @@ public class AppDrawerFragment extends Fragment {
                 filter(s.toString());
                 //you can use runnable postDelayed like 500 ms to delay search text
             }
-        });
 
+        });
 
         return view;
     }

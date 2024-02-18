@@ -8,8 +8,11 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Adapter;
 import android.widget.ArrayAdapter;
+
+import com.google.android.material.color.DynamicColors;
 
 import java.util.ArrayList;
 
@@ -26,6 +29,12 @@ public class MainActivity extends FragmentActivity {
         myViewPager2 = findViewById(R.id.view_pager);
         screenAdapter = new ScreenSlidePagerAdapter(this);
         myViewPager2.setAdapter(screenAdapter);
+
+
+        // Hiding the status bar
+//        View decorView = getWindow().getDecorView();
+//        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+//        decorView.setSystemUiVisibility(uiOptions);
 
     }
 
